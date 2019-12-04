@@ -12,3 +12,7 @@ O objetivo desse projeto era utilizar os conceitos aprendidos no módulo 04 de R
 + PropTypes
 + Styled Components
 + React
+
+#### Autora
+
++ [Ilda Silva](https://www.linkedin.com/in/ilda-silva-neta/)
