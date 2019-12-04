@@ -1,7 +1,7 @@
 
 # Projeto Clone do Facebook com React
 
-O objetivo desse projeto era utilizar os conceitos aprendidos no módulo 04 de React do bootcamp GoStack 8.0.
+O objetivo desse projeto era utilizar os conceitos aprendidos no módulo 04 de React do bootcamp GoStack 8.0 e criar um clone do Facebook com postagens e comentários estáticos controlados através do State.
 
 #### Imagem Final do Projeto
 
