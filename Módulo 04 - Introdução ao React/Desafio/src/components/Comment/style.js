@@ -15,14 +15,17 @@ export const Comments = styled.div`
       width: 35px;
       height: 35px;
       border-radius: 50%;
+      margin-right: 8px;
     }
   }
+
   div {
     display: flex;
 
     .comment {
-      padding: 10px 15px 10px 15px;
+      padding: 10px 11px 10px 15px;
       background: #f2eded;
+      width: 100%
       border-radius: 20px;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 

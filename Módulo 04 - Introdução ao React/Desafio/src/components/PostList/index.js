@@ -24,7 +24,7 @@ export default class PostList extends Component {
                 avatar: require('../../assets/avatar-diego-fernandes.png')
               },
               content:
-                'Olá, a Rocketseat veio para mostrar ao mercado como alavancar a carreira de todos os desenvolvedores e mostrá-los como podem chegar a um novo nível.'
+                'Olá, a Rocketseat veio para mostrar ao mercado como alavancar a carreira de todos os desenvolvedores e mostrá-los como todos podem chegar a um novo nível saindo do zero.'
             }
           ]
         },

@@ -14,24 +14,23 @@ export default function FacePost({
   return (
     <Post>
       <div>
-        <img src={avatar} alt="avatar do usuário" />
-
         <div className="header">
-          <div className="teste">
+          <img src={avatar} alt="avatar do usuário" />
+          <div className="header-name-date">
             <span className="header-name">{authorName}</span>
             <span className="date">{date}</span>
           </div>
-          <p>{content}</p>
-          <hr />
-          {comments.map(comment => (
-            <Comment
-              key={comment.id}
-              name={comment.author.name}
-              content={comment.content}
-              avatar={comment.author.avatar}
-            />
-          ))}
         </div>
+        <p>{content}</p>
+        <hr />
+        {comments.map(comment => (
+          <Comment
+            key={comment.id}
+            name={comment.author.name}
+            content={comment.content}
+            avatar={comment.author.avatar}
+          />
+        ))}
       </div>
     </Post>
   );

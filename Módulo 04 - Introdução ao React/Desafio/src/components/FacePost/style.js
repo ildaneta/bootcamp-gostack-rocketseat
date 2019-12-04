@@ -10,39 +10,32 @@ export const Post = styled.div`
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
-  div &&{
+  div & {
     display: flex;
     flex-direction: column;
 
-
-
-    img {
-
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      margin-right: 10px;
-    }
-
     .header {
-
       line-height: 19px;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-size: 15px;
-      display: flex;
-      flex-direction: column;
-      align-content: flex-start;
 
-      .teste{
-        width: 100%;
-        justify-content: flex-start;
-        margin-left: 50px;
-        margin-top: -42px;
+      display: flex;
+
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      .header-name-date {
+        display: flex;
+        flex-direction: column;
 
         .header-name {
           font-size: 15px;
           font-weight: bold;
           letter-spacing: -0.3px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-size: 15px;
         }
 
         .date {
@@ -54,12 +47,18 @@ export const Post = styled.div`
       }
     }
 
+    p {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 15px;
+    }
+
     hr {
       display: flex;
       flex-direction: column;
       border: 0.2px solid #e89;
       width: 600px;
       margin-top: 20px;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
+  }
 `;
