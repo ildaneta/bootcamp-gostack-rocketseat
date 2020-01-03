@@ -1,0 +1,5 @@
+{
+  "exacMap": {
+    "js": "node -r sucrase/register"
+  }
+}
