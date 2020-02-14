@@ -9,8 +9,10 @@ server.use(express.json());
 
 const users = ['Ilda', 'Vinícius', 'Amanda', 'Juan'];
 
+// middleware global
 server.use((req, res, next) => {
   console.time('Tempo');
+  // retorna qual o método está sendo chamado e a url
   console.log(`Método: ${req.method} \nURL: ${req.url}`);
 
   next();
@@ -40,6 +42,7 @@ server.get('/users', (req, res) => {
 });
 
 // rota que mostra um usuário com base no index passado como route param
+// recebe um middlware de parâmetro que checa se o usuário existe
 server.get('/users/:index', checkUserInArray, (req, res) => {
   const index = req.params.index;
 
