@@ -1,15 +1,16 @@
 {
-  "name": "Aula",
+  "name": "teste",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/server.js",
-    "dev:debbug": "nodemon --inpect srv/server.js"
+    "dev": "nodemon src/server.js"
   },
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
     "nodemon": "^2.0.2",
-    "sucrase": "^3.11.0"
+    "sucrase": "^3.12.1"
   }
 }
