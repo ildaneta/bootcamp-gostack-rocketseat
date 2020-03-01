@@ -11,7 +11,7 @@ export default async (req, res, next) => {
   }
 
   // breaking the string to get only the token, removing the bearer
-  const [, token] = authHeader.slipt(' ');
+  const [, token] = authHeader.split(' ');
 
   try {
     const decoded = await promisify(jwt.verify)(token, authConfig.secret);
