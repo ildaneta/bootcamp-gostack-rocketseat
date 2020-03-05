@@ -1,4 +1,4 @@
-import styled, { keyframes, css } from 'styled-components';
+import styled from 'styled-components';
 
 export const Container = styled.div`
   max-width: 700px;
@@ -12,11 +12,10 @@ export const Container = styled.div`
     font-size: 20px;
     display: flex;
     align-items: center;
-    flex-direction: row;
-  }
 
-  svg {
-    margin-right: 10px;
+    svg {
+      margin-right: 10px;
+    }
   }
 `;
 
@@ -33,60 +32,15 @@ export const Form = styled.form`
   }
 `;
 
-const rotate = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-
-  to{
-    transform: rotate(360deg);
-  }
-`;
-
-export const SubmitButton = styled.button.attrs(props => ({
-  disabled: props.loading
-}))`
+export const SubmitButton = styled.button.attrs({
+  type: 'submit'
+})`
   background: #7159c1;
   border: 0;
-  padding: 0 6px 0 15px;
+  padding: 0 15px;
   margin-left: 10px;
   border-radius: 4px;
   display: flex;
-  justify-content: center;
   align-items: center;
-
-  &[disabled] {
-    cursor: not-allowed;
-    opacity: 0.6;
-  }
-
-  ${props =>
-    props.loading &&
-    css`
-      svg {
-        animation: ${rotate} 2s linear infinite;
-      }
-    `}
-`;
-
-export const List = styled.ul`
-  list-style: none;
-  margin-top: 30px;
-
-  li {
-    padding: 15px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    /* Pega todos os li e adiciona o border top*/
-    & + li {
-      border-top: 1px solid #eee;
-    }
-
-    a {
-      color: #7159c1;
-      text-decoration: none;
-    }
-  }
+  justify-content: center;
 `;
