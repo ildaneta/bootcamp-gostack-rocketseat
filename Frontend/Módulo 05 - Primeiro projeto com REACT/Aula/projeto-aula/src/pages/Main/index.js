@@ -2,9 +2,12 @@ import React, { Component } from 'react';
 import { GithubAlt } from '@styled-icons/fa-brands/GithubAlt';
 import { Plus } from '@styled-icons/fa-solid/Plus';
 import { Spinner3 as Spinner } from '@styled-icons/icomoon/Spinner3';
+import { Link } from 'react-router-dom';
 import api from '../../services/api';
 
-import { Container, Form, SubmitButton } from './styles';
+import Container from '../../components/Container';
+
+import { Form, SubmitButton, List } from './styles';
 
 export default class Main extends Component {
   constructor() {
@@ -12,10 +15,31 @@ export default class Main extends Component {
     this.state = {
       newRepo: '',
       repositories: [],
-      loading: false
+      loading: false,
+      error: null
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  // loading the localstorage data
+  componentDidMount() {
+    const repositories = localStorage.getItem('repositories');
+
+    // if they have repositories in localStorage we'll save it in the state
+    if (repositories) {
+      this.setState({ repositories: JSON.parse(repositories) });
+    }
+  }
+
+  // saving the localstorage data
+  componentDidUpdate(_, prevState) {
+    const { repositories } = this.state;
+
+    // checking if the state of the repository has changed from the current state
+    if (prevState.repositories !== repositories) {
+      localStorage.setItem('repositories', JSON.stringify(repositories));
+    }
   }
 
   handleInputChange = event => {
@@ -24,27 +48,44 @@ export default class Main extends Component {
 
   handleSubmit = async event => {
     event.preventDefault();
-    const { newRepo, repositories } = this.state;
+    this.setState({ loading: true, error: false });
 
-    this.setState({ loading: true });
+    try {
+      const { newRepo, repositories } = this.state;
 
-    // recovering the API data
-    const response = await api.get(`/repos/${newRepo}`);
+      if (newRepo === '') {
+        throw 'É necessário inserir um repositório';
+      }
 
-    // recovering the name of repositories
-    const data = {
-      name: response.data.full_name
-    };
+      const hasRepo = repositories.find(repo => repo.name === newRepo);
 
-    this.setState({
-      repositories: [...repositories, data],
-      newRepo: '',
-      loading: false
-    });
+      if (hasRepo) {
+        throw 'Repositório duplicado';
+      }
+
+      // recovering the API data
+      const response = await api.get(`/repos/${newRepo}`);
+
+      // recovering the name of repositories
+      const data = {
+        name: response.data.full_name
+      };
+
+      this.setState({
+        repositories: [...repositories, data],
+        newRepo: '',
+        loading: false
+      });
+    } catch (error) {
+      this.setState({ error: true });
+      alert(error);
+    } finally {
+      this.setState({ loading: false });
+    }
   };
 
   render() {
-    const { newRepo, loading } = this.state;
+    const { newRepo, loading, repositories, error } = this.state;
 
     return (
       <Container>
@@ -53,7 +94,7 @@ export default class Main extends Component {
           Repositórios
         </h1>
 
-        <Form onSubmit={this.handleSubmit}>
+        <Form onSubmit={this.handleSubmit} error={error}>
           <input
             type="text"
             value={newRepo}
@@ -69,6 +110,20 @@ export default class Main extends Component {
             )}
           </SubmitButton>
         </Form>
+
+        <List>
+          {repositories.map(repo => (
+            <li key={repo.name}>
+              <span>{repo.name}</span>
+              {/* the encodeURIComponent works so that a bar isn't placed
+              but a special character in the URL
+              */}
+              <Link to={`/repository/${encodeURIComponent(repo.name)}`}>
+                Detalhes
+              </Link>
+            </li>
+          ))}
+        </List>
       </Container>
     );
   }
