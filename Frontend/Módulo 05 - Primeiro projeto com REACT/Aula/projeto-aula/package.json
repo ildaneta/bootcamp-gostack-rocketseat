@@ -5,6 +5,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "babel-eslint": "^10.0.3",
+    "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-router-dom": "^5.1.2",
