@@ -28,4 +28,17 @@ export default createGlobalStyle`
    button {
      cursor: pointer;
    }
+
+
+
+   a{
+     color: #d66262;
+     border-bottom: 2px solid #d66262;
+     text-decoration: none;
+
+     &:hover{
+       border-bottom: 2px dashed #d66262;
+       text-decoration: none;
+     }
+   }
 `;
