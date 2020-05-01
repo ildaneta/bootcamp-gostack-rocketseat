@@ -20,8 +20,8 @@ Após inseridos, pode-se consultar mais detalhes desse repositório e as issues 
 ### Instalação do projeto
 
 1. Primeiramente é necessário realizar o `git clone` desse repositório.
-2. Posteriormente é necessário rodar `npm install` para que todos as dependências existentes no projeto necessárias sejam baixadas.
-3. Após os passos acima, rode `npm run` para que uma porta localhost seja aberta e o projeto iniciado.
+2. Posteriormente é necessário rodar `npm install` ou `yarn` para que todos as dependências existentes no projeto necessárias sejam baixadas.
+3. Após os passos acima, rode `npm run` ou `yarn start` para que uma porta localhost seja aberta e o projeto iniciado.
 
 ### Autora
 
