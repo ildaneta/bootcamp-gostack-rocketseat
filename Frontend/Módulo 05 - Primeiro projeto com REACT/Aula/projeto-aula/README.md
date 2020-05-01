@@ -17,6 +17,12 @@ Após inseridos, pode-se consultar mais detalhes desse repositório e as issues 
 - Styled components
 - Styled icons
 
+### Instalação do projeto
+
+1. Primeiramente é necessário realizar o `git clone` desse repositório.
+2. Posteriormente é necessário rodaru `npm install` para que todos as dependências necessárias sejam baixadas.
+3. Após os passos acima, rode `npm run` para que uma porta localhost seja aberta e o projeto iniciado.
+
 ### Autora
 
 - [Linkedin](https://www.linkedin.com/in/ilda-silva-neta/)
