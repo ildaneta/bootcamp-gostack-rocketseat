@@ -20,7 +20,7 @@ This project is under the [MIT License](https://choosealicense.com/licenses/mit/
 
 ## :pencil: Author
 
-- [LinkedIn](https://www.linkedin.com/in/ilda-silva-neta/)
-- [Blog](https://ildaneta.dev)
+- <a href="https://ildaneta.dev" target="_blank">Blog</a>
+- <a href="https://www.linkedin.com/in/ilda-silva-neta/" target="_blank">LinkedIn</a>
 
 **Made with love by** **_Ilda Neta_** :heart_decoration:
