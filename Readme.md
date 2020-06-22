@@ -23,4 +23,4 @@ This project is under the [MIT License](https://choosealicense.com/licenses/mit/
 - [LinkedIn](https://www.linkedin.com/in/ilda-silva-neta/)
 - [Blog](https://ildaneta.dev)
 
-**Made with love by** **_Ilda Neta._**
+**Made with love by** **_Ilda Neta_** :heart_decoration:
