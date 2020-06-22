@@ -6,9 +6,9 @@
 
 ## Menu Contents
 
-- [Motivation](##pushpin-motivation)
-- [License](##page_with_curl-license)
-- [Author](##pencil-author)
+- [Motivation](#pushpin-motivation)
+- [License](#page_with_curl-license)
+- [Author](#pencil-author)
 
 ## :pushpin: Motivation
 
@@ -24,5 +24,7 @@ This project is under the [MIT License](https://choosealicense.com/licenses/mit/
 
 ## :pencil: Author
 
-[LinkedIn](https://www.linkedin.com/in/ilda-silva-neta/)
-[Blog](https://ildaneta.dev)
+- [LinkedIn](https://www.linkedin.com/in/ilda-silva-neta/)
+- [Blog](https://ildaneta.dev)
+
+**Made with love by** **_Ilda Neta._**
