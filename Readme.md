@@ -2,8 +2,6 @@
 
 # :rocket: Bootcamp GoStack :woman_astronaut:
 
----
-
 ## Menu Contents
 
 - [Motivation](#pushpin-motivation)
