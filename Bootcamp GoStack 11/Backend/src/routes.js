@@ -1,9 +1,33 @@
 import express from 'express';
-import { uuid } from 'uuidv4';
+import { uuid, isUuid } from 'uuidv4';
 
 const routes = express.Router();
 
 const projects = [];
+
+// será disparado automaticamente em todas as rotas
+function logRequests(request, response, next) {
+  const { method, url } = request;
+
+  const logLabel = `[${method.toUpperCase()}: ${url}]`;
+
+  console.log(logLabel);
+
+  return next();
+}
+
+function validateProjectId(request, response, next) {
+  const { id } = request.params;
+
+  if (!isUuid(id)) {
+    return response.status(400).json({ error: 'Invalid project ID!' });
+  }
+
+  return next();
+}
+
+routes.use(logRequests);
+routes.use('/projects/:id', validateProjectId);
 
 routes.get('/projects', (request, response) => {
   const { title } = request.query;
