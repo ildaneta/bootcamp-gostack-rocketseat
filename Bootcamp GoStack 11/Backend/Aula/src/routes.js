@@ -66,6 +66,7 @@ routes.put('/projects/:id', (request, response) => {
     owner,
   };
 
+  // inserting project in projects
   projects[projectIndex] = project;
 
   return response.json(project);
@@ -73,7 +74,6 @@ routes.put('/projects/:id', (request, response) => {
 
 routes.delete('/projects/:id', (request, response) => {
   const { id } = request.params;
-  const { title, owner } = request.body;
 
   const projectIndex = projects.findIndex((project) => project.id === id);
 
