@@ -1,13 +1,13 @@
 ![image](https://user-images.githubusercontent.com/21963291/85336662-5d8fb200-b4b5-11ea-999f-41da44f32b82.png)
 
+# Backend Chalenge - NodeJS Concepts
+
 ## ![image](https://user-images.githubusercontent.com/21963291/85338764-45ba2d00-b4b9-11ea-921a-d15eb692b2ea.png) Menu Contents
 
 - [Motivation](#pushpin-motivation)
 - [Technologies](#woman_technologist-technologies)
 - [Installation](#heavy_check_mark-installation)
 - [Author](#pencil-author)
-
-# Backend Chalenge - NodeJS Concepts
 
 ## :pushpin: Motivation
 
@@ -47,4 +47,4 @@ In this challenge, the proposal for a solution was to make the automated tests p
 - <a href="https://ildaneta.dev" target="_blank">Blog</a>
 - <a href="https://www.linkedin.com/in/ilda-silva-neta/" target="_blank">LinkedIn</a>
 
-Made with love by _*Ilda Neta*_ :heart_decoration:
+Made with love :heart*decoration: by *_Ilda Neta._\_
