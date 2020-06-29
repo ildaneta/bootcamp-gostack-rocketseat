@@ -47,4 +47,4 @@ In this challenge, the proposal for a solution was to make the automated tests p
 - <a href="https://ildaneta.dev" target="_blank">Blog</a>
 - <a href="https://www.linkedin.com/in/ilda-silva-neta/" target="_blank">LinkedIn</a>
 
-Made with love :heart*decoration: by *_Ilda Neta._\_
+Made with love :heart_decoration: by **Ilda Neta.**
