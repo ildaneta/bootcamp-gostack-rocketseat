@@ -2,10 +2,10 @@ import React from 'react';
 
 // import { Container } from './styles';
 
-function Header() {
+function Header({ title }) {
   return (
     <header>
-      <h1>ReactJS</h1>
+      <h1>{title}</h1>
     </header>
   );
 }
