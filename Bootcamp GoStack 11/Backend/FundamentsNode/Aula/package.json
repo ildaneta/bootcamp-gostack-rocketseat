@@ -8,7 +8,9 @@
     "dev:server": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "date-fns": "^2.15.0",
+    "express": "^4.17.1",
+    "uuidv4": "^6.2.0"
   },
   "devDependencies": {
     "@types/express": "^4.17.7",
