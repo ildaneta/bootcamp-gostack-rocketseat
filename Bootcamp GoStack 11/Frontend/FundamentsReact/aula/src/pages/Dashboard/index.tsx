@@ -1,9 +1,12 @@
-import React, { useState, FormEvent } from 'react';
+import React, { useState, useEffect, FormEvent } from 'react';
+import { Link } from 'react-router-dom';
+
 import { FiChevronRight } from 'react-icons/fi';
 import logoImg from '../../assets/logo.svg';
 import api from '../../services/api';
 
 import { Title, Form, Repositories, Error } from './styles';
+import { gzipSync } from 'zlib';
 
 interface Repository {
   full_name: string;
@@ -15,7 +18,17 @@ interface Repository {
 }
 
 const Dashboard: React.FC = () => {
-  const [repositories, setRepositories] = useState<Repository[]>([]);
+  const [repositories, setRepositories] = useState<Repository[]>(() => {
+    const storageRepositories = localStorage.getItem(
+      '@GithubExplorer:repositories',
+    );
+
+    if (storageRepositories) {
+      return JSON.parse(storageRepositories);
+    } else {
+      return [];
+    }
+  });
   const [newRepo, setNewRepo] = useState('');
   const [inputError, setInputError] = useState('');
 
@@ -44,6 +57,13 @@ const Dashboard: React.FC = () => {
     }
   }
 
+  useEffect(() => {
+    localStorage.setItem(
+      '@GithubExplorer:repositories',
+      JSON.stringify(repositories),
+    );
+  }, [repositories]);
+
   return (
     <>
       <img src={logoImg} alt="Github explorer" />
@@ -62,7 +82,7 @@ const Dashboard: React.FC = () => {
 
       <Repositories>
         {repositories.map(repo => (
-          <a href="teste" key={repo.full_name}>
+          <Link to={`/repositories/${repo.full_name}`} key={repo.full_name}>
             <img src={repo.owner.avatar_url} alt={repo.owner.login} />
 
             <div>
@@ -71,7 +91,7 @@ const Dashboard: React.FC = () => {
             </div>
 
             <FiChevronRight size={20} />
-          </a>
+          </Link>
         ))}
       </Repositories>
     </>
