@@ -6,7 +6,6 @@
   "extends": [
     "plugin:react/recommended",
     "airbnb",
-    "react-hooks",
     "prettier/@typescript-eslint",
     "plugin:prettier/recommended"
   ],
@@ -22,9 +21,10 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "plugins": ["react", "@typescript-eslint", "prettier", "react-hooks"],
   "rules": {
     "prettier/prettier": "error",
+    "react/jsx-one-expression-per-line": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
