@@ -20,12 +20,6 @@ export const Form = styled.form<IFormProps>`
   border: ${props => (props.hasError ? '3px solid #c53030' : '3px solid #fff')};
   border-radius: 5px;
 
-  /* ${props =>
-    props.hasError &&
-    css`
-      border-color: #c53030;
-    `} */
-
   input {
     flex: 1;
     padding: 0 24px;
@@ -39,7 +33,6 @@ export const Form = styled.form<IFormProps>`
   button {
     width: 210px;
     background: #04d361;
-    /* border-radius: 5px 5px 5px 5px; */
     color: #fff;
     font-weight: bold;
     transition: background-color 0.2s;
