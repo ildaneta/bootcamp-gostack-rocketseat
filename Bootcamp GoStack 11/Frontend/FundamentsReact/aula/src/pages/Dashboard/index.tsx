@@ -6,7 +6,6 @@ import logoImg from '../../assets/logo.svg';
 import api from '../../services/api';
 
 import { Title, Form, Repositories, Error } from './styles';
-import { gzipSync } from 'zlib';
 
 interface Repository {
   full_name: string;
