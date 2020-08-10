@@ -1,44 +1,67 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Frontend Challenge - ReactJS Fundaments
 
-## Available Scripts
+## ![image](https://user-images.githubusercontent.com/21963291/85338764-45ba2d00-b4b9-11ea-921a-d15eb692b2ea.png) Menu Contents
 
-In the project directory, you can run:
+- [Motivation](#pushpin-motivation)
+- [Technologies](#woman_technologist-technologies)
+- [Final Application](#computer-final-application)
+- [Installation](#heavy_check_mark-installation)
+- [Author](#pencil-author)
 
-### `yarn start`
+## :pushpin: Motivation
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+In this challenge, a web application was built that aims at the user to enter github repositories and save their favorites.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+When you click on a repository, your issues will be displayed.
 
-### `yarn test`
+The methods used in this application were:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+/ GET
 
-### `yarn build`
+## :woman_technologist: Technologies
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Axios
+- React
+- Typescript
+- React Icons
+- React Router DOM
+- Styled Components
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## :computer: Final Application
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![imagem-final-cursor](https://user-images.githubusercontent.com/21963291/89822004-e4602300-db25-11ea-8613-8c7d8d164554.png)
 
-### `yarn eject`
+![Lidando com erro de input em branco](https://user-images.githubusercontent.com/21963291/89826217-4c196c80-db2c-11ea-9af9-a8571d8c5507.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![screencapture-localhost-3000-2020-08-10-17_13_51](https://user-images.githubusercontent.com/21963291/89826610-e24d9280-db2c-11ea-9a7c-e9520306dbf1.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![final](https://user-images.githubusercontent.com/21963291/89826640-ee395480-db2c-11ea-8cab-ab8a949a8663.PNG)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## :heavy_check_mark: Installation
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. First, you need to have NodeJS and Yarn installed, then, to clone the project via HTTPS, run the following command:
 
-## Learn More
+`git clone https://github.com/ildaneta/frontend-challenge`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. If you already have a registered SSH key, you can perform the clone via SSH through the command:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+`git clone git@github.com:ildaneta/frontend-challenge`
+
+3. After cloning, enter the cloned repository:
+
+`cd frontend-challenge`
+
+4. After being inside the cloned repository, download the dependencies using:
+
+`yarn` or `yarn add`
+
+5. To run the application, perform through the command:
+
+`yarn start`
+
+## :pencil: Author
+
+- <a href="https://ildaneta.dev" target="_blank">Blog</a>
+- <a href="https://www.linkedin.com/in/ildaneta/" target="_blank">LinkedIn</a>
+
+Made with :heart_decoration: by **Ilda Neta.**
