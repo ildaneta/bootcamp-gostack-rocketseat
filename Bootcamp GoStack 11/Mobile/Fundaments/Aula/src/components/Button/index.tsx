@@ -13,7 +13,7 @@ const Button: React.FC<IButtonProps> = ({
 }: IButtonProps) => {
   return (
     <Container {...rest}>
-      <ButtonText onPress={() => {}}>{children}</ButtonText>
+      <ButtonText>{children}</ButtonText>
     </Container>
   );
 };
