@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  background-color: #eee;
+}
+
+div {
+  width: 100%;
+}
+
+.button {
+  width: 30px;
+}
+
+.header {
+  width: 100%;
+  background-color: #bbb3db;
+  padding: 15px;
+}
+
+.repository {
+  margin-top: 20px;
+}
+
+div label {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+form {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+form div input {
+  margin-right: 10px;
+  width: 300px;
+  height: 35px;
+  padding: 7px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #e2dcdc;
+  border-radius: 6px;
+  outline-color: #7159c1;
+  outline-width: thin;
+  color: #333;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+div li {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  background: #7159c1;
+  color: #fff;
+  border: 0;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 6px;
+  letter-spacing: 0.06rem;
+  font-size: 14px;
+  margin: auto;
+}
+
+.repo {
+  width: 540px;
+  margin-left: 21px;
+  border-radius: 6px;
+  padding: 2px 2px;
+  margin-bottom: 7px;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+div ul li {
+  font-size: 16px;
+  font-family: sans-serif;
+  margin-left: 6px;
+  width: 100%;
+}
+
+.title-repo {
+  width: 376px;
+}
+
+.repositories {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+div li button {
+  margin-left: 67px;
+  background: #ca4949;
+  padding: 8px;
+}
